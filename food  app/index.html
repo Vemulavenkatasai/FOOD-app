@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Order App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Food Menu</h1>
+  <div class="menu">
+    <div class="item">
+      <img src="images/pizza.jpg" alt="Pizza"/>
+      <h2>Pizza</h2>
+      <p>₹200</p>
+      <button onclick="addToCart('Pizza', 200)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="images/burger.jpg" alt="Burger"/>
+      <h2>Burger</h2>
+      <p>₹150</p>
+      <button onclick="addToCart('Burger', 150)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="images/fries.jpg" alt="Fries"/>
+      <h2>Fries</h2>
+      <p>₹80</p>
+      <button onclick="addToCart('Fries', 80)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="images/biryani.jpg" alt="Biryani"/>
+      <h2>Biryani</h2>
+      <p>₹250</p>
+      <button onclick="addToCart('Biryani', 250)">Add to Cart</button>
+    </div>
+  </div>
+
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <h3>Total: ₹<span id="total-price">0</span></h3>
+
+<button class="order-btn" onclick="placeOrder()">Place Order</button>
+<button class="cancel-btn" onclick="cancelOrder()">Cancel Order</button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
